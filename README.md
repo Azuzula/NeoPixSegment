@@ -8,18 +8,18 @@ Our library depends on the [Adafruit_Neopixel](https://github.com/adafruit/Adafr
 
 Documentation
 -------------
--Init			Initialize display NeoPixSegment.Init(Arduino Pin, format of the display, debug mode).
--SetColor		Sets color of each or only one segment. NeoPixSegment.SetColor(R, G, B, index).
+-Init			        Initialize display NeoPixSegment.Init(Arduino Pin, format of the display, debug mode).
+-SetColor		      Sets color of each or only one segment. NeoPixSegment.SetColor(R, G, B, index).
 -SetBlinkInterval	Sets interval for blinking. Time between 100ms and 5000ms. 500ms is default.
 -SetBrightness		Sets brightness whole display. 0 to 255, 60 is default.
 -WriteCharacter		Write one character to the display at index. NeoPixSegment.WriteCharacter('8', index). Char only.
 -WriteDotColon		Show or hide colon NeoPixSegment.WriteDotColon(state on/off, index).
--WriteNumber		Write number to the display. NeoPixSegment.WriteNumber(12, index). Int and byte only.
--WriteText		Write char array to the display. NeoPixSegment.WriteText('12', index). Char only.
--Clear			Clear display or one segment. NeoPixSegment.Clear(index).
--Show			Send data to show on the display. NeoPixSegment.Show().
--SegmentBlink		Set blink with segment NeoPixSegment.SegmentBlink(blink on/off, index).
--ALL_SEGMENTS		Use instead of index, Usable with SetColor, Clear and SegmentBlink.
+-WriteNumber		  Write number to the display. NeoPixSegment.WriteNumber(12, index). Int and byte only.
+-WriteText		    Write char array to the display. NeoPixSegment.WriteText('12', index). Char only.
+-Clear			      Clear display or one segment. NeoPixSegment.Clear(index).
+-Show			        Send data to show on the display. NeoPixSegment.Show().
+-SegmentBlink		  Set blink with segment NeoPixSegment.SegmentBlink(blink on/off, index).
+-ALL_SEGMENTS		  Use instead of index, Usable with SetColor, Clear and SegmentBlink.
 
 Download
 --------
