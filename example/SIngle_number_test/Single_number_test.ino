@@ -7,7 +7,7 @@
 
 NeoPixSegment Pix;
 
-unsigned long myMillis = 10;
+unsigned long myMillis;
 
 void setup() {
   Pix.Init(Pin, LedsPerSegment, Format, Debug);
@@ -30,19 +30,19 @@ const uint8_t color[10][3] {
 };
 
 byte a = 0;
-
 void loop() {
   if ((millis() - myMillis) >= 1000) {
     myMillis = millis();
     Pix.WriteNumber(a, 0); //WriteNumber(number, index)
-    a++;
-    if (a == 10) {
-      a = 0;
-    }
+    //set colors
     byte r = color[a][0];
     byte g = color[a][1];
     byte b = color[a][2];
     Pix.SetColor(r, g, b, 0);
+    a++;
+    if (a == 10) {
+      a = 0;
+    }
   }
   //Show numbers on the display
   Pix.Show();
