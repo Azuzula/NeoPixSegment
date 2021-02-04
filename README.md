@@ -8,29 +8,37 @@ Our library depends on the [Adafruit_Neopixel](https://github.com/adafruit/Adafr
 
 Documentation
 -------------
--Init			        Initialize display NeoPixSegment.Init(Arduino Pin, format of the display, debug mode).
+#define Pin 3 // Communication pin
 
--SetColor		      Sets color of each or only one segment. NeoPixSegment.SetColor(R, G, B, index).
+#define LedsPerSegment 2 // Leds in segment
 
--SetBlinkInterval	Sets interval for blinking. Time between 100ms and 5000ms. 500ms is default.
+#define Format "8" // "88:88:88", "8888" etc.
 
--SetBrightness		Sets brightness whole display. 0 to 255, 60 is default.
+#define Debug 0 // 0 = Debug in Serial monitor is disabled, 1 = Debug enabled
 
--WriteCharacter		Write one character to the display at index. NeoPixSegment.WriteCharacter('8', index). Char only.
+-Init:			        Initialize display **NeoPixSegment.Init(Arduino Pin, format of the display, debug mode);**
 
--WriteDotColon		Show or hide colon NeoPixSegment.WriteDotColon(state on/off, index).
+-SetColor:		      Sets color of each or only one segment. **NeoPixSegment.SetColor(R, G, B, index);**
 
--WriteNumber		  Write number to the display. NeoPixSegment.WriteNumber(12, index). Int and byte only.
+-SetBlinkInterval:	Sets interval for blinking. Time between 100ms and 5000ms. 500ms is default **NeoPixSegment.SetBlinkInterval(500);**
 
--WriteText		    Write char array to the display. NeoPixSegment.WriteText('12', index). Char only.
+-SetBrightness:		Sets brightness whole display. 0 to 255, 60 is default. **NeoPixSegment.SetBrightness(20);**
 
--Clear			      Clear display or one segment. NeoPixSegment.Clear(index).
+-WriteCharacter:		Write one character to the display at index. Char only. **NeoPixSegment.WriteCharacter('8', index);** 
 
--Show			        Send data to show on the display. NeoPixSegment.Show().
+-WriteDotColon:		Show or hide colon **NeoPixSegment.WriteDotColon(state on/off, index);**
 
--SegmentBlink		  Set blink with segment NeoPixSegment.SegmentBlink(blink on/off, index).
+-WriteNumber:		  Write number to the display. Int and byte only. **NeoPixSegment.WriteNumber(12, index);**
 
--ALL_SEGMENTS		  Use instead of index, Usable with SetColor, Clear and SegmentBlink.
+-WriteText:		    Write char array to the display.  Char array only. **NeoPixSegment.WriteText('12', index);**
+
+-Clear:			      Clear display or one segment. **NeoPixSegment.Clear(index);**
+
+-Show:			        Send data to show on the display. **NeoPixSegment.Show();**
+
+-SegmentBlink:		  Set blink with segment **NeoPixSegment.SegmentBlink(blink on/off, index);**
+
+-ALL_SEGMENTS:		  Use instead of index, Usable with SetColor, Clear and SegmentBlink. **NeoPixSegment.Clear(ALL_SEGMENTS);**
 
 Download
 --------
