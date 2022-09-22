@@ -1,9 +1,14 @@
 # NeoPixSegment display
 ==========
 This is an [Arduino](http://arduino.cc) library for 7 segment LED display based on WS2812/Neopixel.
+----------
+
+3D print your parts
+----------
+You can download stl from [Printables.com](https://www.printables.com/cs/model/280269-neopix-segment-hodiny)
 
 Dependency
-----------
+---------
 Our library depends on the [Adafruit_Neopixel](https://github.com/adafruit/Adafruit_NeoPixel) library.
 
 Documentation
@@ -51,5 +56,5 @@ Unzip the content to your Arduino Library folder or use Add .Zip library from me
 
 Support
 -------
-Support us by buying this product at our e-shop [www.vokolo.cz/neopixsegment](https://www.vokolo.cz/neopixsegment/) for Czech and Slovakia customers only.
+Support me by buying this product at my e-shop [www.vokolo.cz/neopixsegment](https://www.vokolo.cz/neopixsegment/) for Czech and Slovakia customers only.
 Or send your request to the email azuzula.cz@gmail.com and we can make a deal.
